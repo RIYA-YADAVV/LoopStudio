@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="main">
-        <div class="header__section">
+        <div class="header__section padding">
             <div class="header__row">
                 <h1>loopstudios</h1>
                 <div class="nav__bar" >
@@ -75,7 +75,7 @@
 
         </div>
 
-        <div class="about__section">
+        <div class="about__section padding">
             <div class="about__image"></div>
             <div class="about__description">
                 <h1>THE LEADER IN INTERACTIVE VR</h1>
@@ -88,7 +88,7 @@
             </div>
         </div>
         
-        <div class="creations__section">
+        <div class="creations__section padding">
             <div class="creations__heading__row">
                 <h2>OUR CREATIONS</h2>
                 <button>SEE ALL</button>
@@ -105,7 +105,7 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div class="footer padding">
             <div class="footer__col">
                 <h2>loopstudios</h2>
                 <div class="footer__bar">
@@ -162,6 +162,7 @@
             document.getElementsByClassName('hamburger')[0].style.display='none';
             document.getElementsByClassName('nav__bar')[0].style.display='none';
             document.getElementsByClassName('header__text')[0].style.marginTop='4vh';
+            document.getElementsByClassName('nav__bar__mb')[0].classList.add("slide__effect");
         }
 
         function show__ham(){
