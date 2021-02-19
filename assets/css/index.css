@@ -3,8 +3,7 @@
     
     font-size: 15px;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 100;
-    
+    font-weight: 100;   
 }
 
 .header__section{
@@ -37,7 +36,6 @@
     border-bottom: 1px white;
 }
 
-
 .nav__bar li a{
     text-decoration: none;
     color:white;
@@ -47,17 +45,35 @@
     border-bottom: 2px solid white;
 }
 
-
-.nav__bar__small{
-    background-color: transparent;
-    margin-right: -100px;
-    display: none;   
+.nav__bar__mb
+{
+    color:white;
+    display: none;
+    width: auto;
+    height: 70vh;
+    background-color: black;
 }
 
+.nav__bar__small {   
+}
+
+.mb__header{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mb__header h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
 .nav__bar__small li{
  list-style: none;
- margin: 20px;
+ padding: 15px 0;
 }
+
 
 
 .nav__bar__small li a{
@@ -85,7 +101,8 @@
 .hamburger{
     display: none;
     background-color: transparent; 
-    outline: 0; 
+    outline: 0;
+    border: 0; 
     height: fit-content; 
     padding: 10px;
 }
@@ -93,6 +110,7 @@
 .close{
     background-color: transparent; 
     outline: 0; 
+    border: 0;
     height: fit-content; 
     margin-right: 25px !important;
 }
@@ -177,7 +195,6 @@
     margin-bottom: 34px;
     align-items: center;
     color: white;
-
 }
 
 .card__holder div h4
@@ -185,51 +202,55 @@
     font-size: 30px; 
     margin-top:240px ;
     padding:30px; 
+   
 }
 
 .card__holder div:hover{
     cursor: pointer;
-    opacity: 0.6; 
+    opacity: 0.6;   
+}
+
+.card__holder div:hover h4{
+    animation: bounce 1s;
+}
+
+.img__cover
+{
+    background-size:cover ;
 }
 
 .img1{
  background-image: url('../images/desktop/image-deep-earth.jpg');
- background-size:cover;
 }
 
 .img2{
     background-image: url('../images/desktop/image-night-arcade.jpg');
-    background-size:cover ;
 }
 
 .img3{
     background-image: url('../images/desktop/image-soccer-team.jpg');
-    background-size:cover ;
+   
 }
 
 .img4{
     background-image: url('../images/desktop/image-grid.jpg');
-    background-size:cover ;
 }
 
 .img5{
     background-image: url('../images/desktop/image-from-above.jpg');
-    background-size:cover ;
 }
 
 .img6{
     background-image: url('../images/desktop/image-pocket-borealis.jpg');
-    background-size:cover ;
 }
 
 .img7{
     background-image: url('../images/desktop/image-curiosity.jpg');
-    background-size:cover ;
+
 }
 
 .img8{
     background-image: url('../images/desktop/image-fisheye.jpg');
-    background-size:cover ;
 }
 
 .footer{
@@ -280,6 +301,49 @@
     color: darkgray;
 }
 
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+    }
+}
+
+@media screen and (max-width:1508px)
+{
+    .card__holder>div{
+        width: 340px;
+    }
+
+}
+
+@media screen and (max-width:1450px)
+{
+    .card__holder>div{
+        width: 325px;
+    }
+
+}
+
+@media screen and (max-width:1380px)
+{
+    .card__holder>div{
+        width: 280px;
+    }
+
+}
+
+
+
 @media screen and (max-width: 1228px)
 {
     .header__text{
@@ -288,6 +352,17 @@
     .about__description{
         margin-left: -100px;
     }
+}
+
+@media screen and (max-width:1207px)
+{
+    .card__holder{
+        flex-grow: inherit;
+    }
+    .card__holder>div{
+        width: 350px;
+    }
+
 }
 
 @media screen and (max-width:1135px){
@@ -300,7 +375,7 @@
 @media screen and (max-width:1100px){
     .about__image{   
         background-image: url('../images/mobile/image-interactive.jpg');
-        background-position: center;
+        background-size: ;
     }
 
     .about__section{
@@ -321,6 +396,13 @@
 
     }
     
+}
+
+@media screen and (max-width:910px)
+{
+    .card__holder>div{
+        width: 260px;
+    }
 }
 
 @media screen and (max-width:800px)
@@ -356,6 +438,11 @@
 
     .card__holder>div{
         width: 100%;
+        height: 200px;
+    }
+
+    .card__holder div h4{
+        margin-top: 120px;
     }
 
     .footer__col h2{
@@ -365,42 +452,34 @@
     
 .img1{
     background-image: url('../images/mobile/image-deep-earth.jpg');
-    background-size:cover;
    }
    
    .img2{
        background-image: url('../images/mobile/image-night-arcade.jpg');
-       background-size:cover ;
    }
    
    .img3{
        background-image: url('../images/mobile/image-soccer-team.jpg');
-       background-size:cover ;
    }
    
    .img4{
        background-image: url('../images/mobile/image-grid.jpg');
-       background-size:cover ;
    }
    
    .img5{
        background-image: url('../images/mobile/image-from-above.jpg');
-       background-size:cover ;
    }
    
    .img6{
        background-image: url('../images/mobile/image-pocket-borealis.jpg');
-       background-size:cover ;
    }
    
    .img7{
        background-image: url('../images/mobile/image-curiosity.jpg');
-       background-size:cover ;
    }
    
    .img8{
        background-image: url('../images/mobile/image-fisheye.jpg');
-       background-size:cover ;
    }
 
    .hamburger{
@@ -415,11 +494,15 @@
 
 }
 
-@media screen and (max-width:400px)
+@media screen and (max-width:430px)
 {
     .header__text{
         padding: 15px;
         padding-right: 40px;
     }
+    .card__holder div h4{
+        margin-top: 90px;
+    }
 
 }
+
